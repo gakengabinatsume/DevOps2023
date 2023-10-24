@@ -51,3 +51,23 @@
 
 Please note that these are just a few examples, and there are many more commands available for Docker and Docker Swarm. 
 You can refer to the official documentation [here](https://docs.docker.com/engine/reference/commandline/cli/) .
+
+**Exemple:**
+
+1. We can create an image from a docker file and index.html 
+
+`cd Docker\ project/`
+
+`docker build -t gabimiron96/gakengabinatsume .`
+
+2. Then push it into DockerHub so that others will be able to pull it
+
+`docker push gabimiron96/gakengabinatsume:latest`
+
+`docker pull gabimiron96/gakengabinatsume:latest`
+
+3. With the same docker file we can create a different image by changing the index.html file and push it as well
+
+`docker build -t gabimiron96/gakengabinatsume:Beta .`
+
+`docker push gabimiron96/gakengabinatsume:Beta`
