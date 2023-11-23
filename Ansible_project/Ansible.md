@@ -41,8 +41,19 @@
 
 ` ansible -m ping all`
 
-**Step 6 : Create a playbook.yaml file**
+![ping](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/00f34204-252d-4bb2-bce2-d2f63ebbc070)
+
+**Step 6 : Create a playbook.yaml file and run it**
 
 `nano playbook.yaml`
 
 [playbook](https://github.com/gakengabinatsume/DevOps2023/blob/main/Ansible_project/playbook.yaml/)
+
+`ansible-playbook playbook.yaml`
+
+![playbook](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/7d430aa0-9816-4f45-81a0-2baa0636c27d)
+
+**Step 7 : Check the playbook results**
+
+`ssh root@10.106.0.2`
+
