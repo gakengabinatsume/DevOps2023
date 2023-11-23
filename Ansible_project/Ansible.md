@@ -34,8 +34,15 @@
 `cd /etc/ansible/`
 
 `nano inventory`
+
 [inventory](https://github.com/gakengabinatsume/DevOps2023/blob/main/Ansible_project/inventory)
 
 **Step 5 : Check the ssh connection to the nodes**
 
 ` ansible -m ping all`
+
+**Step 6 : Create a playbook.yaml file**
+
+`nano playbook.yaml`
+
+[playbook](https://github.com/gakengabinatsume/DevOps2023/blob/main/Ansible_project/playbook.yaml/)
