@@ -14,3 +14,27 @@
 `sudo add-apt-repository --yes --update ppa:ansible/ansible`
 
 `sudo apt install ansible`
+
+**Step 2 : Check if it is done correctly**
+
+`ansible --version`
+
+**Step 3 : Generate a ssh key and copy it in the worker nodes**
+
+`ssh-keygen`
+
+`ssh-copy-id root@10.106.0.2`
+
+`ssh-copy-id root@10.106.0.4`
+
+`ssh-copy-id root@10.106.0.3`
+
+**Step 4 : Create inventory file in ansible directory**
+
+`cd /etc/ansible/`
+
+`nano inventory`
+
+**Step 5 : Check the ssh connection to the nodes**
+
+` ansible -m ping all`
