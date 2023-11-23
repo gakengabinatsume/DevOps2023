@@ -57,3 +57,6 @@
 
 `ssh root@10.106.0.2`
 
+![status_node_1](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/553896cf-1600-4e52-9d11-5df72ced71eb)
+
+
