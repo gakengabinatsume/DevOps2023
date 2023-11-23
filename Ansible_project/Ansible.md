@@ -34,6 +34,7 @@
 `cd /etc/ansible/`
 
 `nano inventory`
+[inventory](https://github.com/gakengabinatsume/DevOps2023/blob/main/Ansible_project/inventory)
 
 **Step 5 : Check the ssh connection to the nodes**
 
