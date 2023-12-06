@@ -5,7 +5,7 @@
 
 **Docker Swarm is a native clustering and orchestration solution for Docker, enabling the management of multiple Docker hosts as a single virtual system.**
 
-![alt text](https://docs.docker.com/engine/swarm/images/swarm-diagram.png)
+![alt text](https://sysdig.com/wp-content/uploads/image2-52-1170x549.png)
 **Benefits of Docker:**
 - Consistent environments: Docker ensures that applications run consistently across different environments, reducing the "it works on my machine" problem.
 - Lightweight: Docker containers are lightweight and share the host OS kernel, resulting in faster startup times and efficient resource utilization.
