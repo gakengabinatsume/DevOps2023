@@ -1,4 +1,4 @@
 FROM python:3.7
 WORKDIR /app
 COPY . /app
-CMD ["python","Welcome.py"]
+CMD ["python3","Welcome.py"]
