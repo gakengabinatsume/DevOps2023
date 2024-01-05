@@ -1,3 +1,3 @@
 FROM python:latest
-COPY Welcome.py ./
+COPY Welcome.py .
 CMD ["python","./Welcome.py"]
