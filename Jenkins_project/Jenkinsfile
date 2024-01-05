@@ -6,7 +6,7 @@ pipeline {
        // Please update your own registry here
        REGISTRY = 'registry.hub.docker.com'
        REGISTRY_IMAGE = "$REGISTRY/gabimiron96/jenkins"
-       DOCKERFILE_PATH = 'Dockerfile'
+       DOCKERFILE_PATH = 'Jenkins_project/Dockerfile'
        // docker = '/usr/local/bin/docker'
 
        REGISTRY_USER = credentials('registryUser')
