@@ -1,4 +1,4 @@
 FROM python:latest
 WORKDIR /usr/app/src
-COPY Welcome.py 
+COPY Welcome.py .
 CMD ["python","./Welcome.py"]
