@@ -1,3 +1,5 @@
-FROM python:latest
-COPY Welcome.py /Jenkins_project
-CMD ["Welcome.py"]
+FROM python:3.7
+WORKDIR /app
+COPY . /app
+RUN pip install -r beautifulsoup4
+CMD ["python", "./Welcome.py"]
