@@ -1,3 +1,3 @@
 FROM python:latest
-COPY Welcome.py /usr/local/share/
+COPY Welcome.py /Jenkins_project
 CMD ["Welcome.py"]
