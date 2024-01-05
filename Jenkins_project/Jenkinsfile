@@ -28,5 +28,10 @@ pipeline {
                sh 'docker push $REGISTRY_IMAGE:$GIT_COMMIT_SHORT-jenkins-$CURRENT_BUILD_NUMBER'
            }
        }
+   }   
+  post {
+  always {
+   sh 'docker logout'
    }
+ } 
 }
