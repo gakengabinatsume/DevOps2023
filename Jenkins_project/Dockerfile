@@ -4,4 +4,4 @@ COPY . /app
 CMD ["Welcome.py"]
 ENTRYPOINT ["python3"]
 
-//CMD ["python", "./Welcome.py"]
+#CMD ["python", "./Welcome.py"]
