@@ -34,7 +34,8 @@ Files nedded:
 
 `sudo docker-compose restart`
 
-![Targets](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/51a169c9-78ff-4145-9aa8-fae9dcf8068f)
+![Targets](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/1cce0bd9-c3b3-4c5a-a4a5-dd0905a3ec84)
+
 
 -Log into Grafana (localhost:3000) using admin as initial user and password
 
