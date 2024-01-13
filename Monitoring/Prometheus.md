@@ -12,10 +12,15 @@ Files nedded:
 - nodeexporter.yaml
 
 `mkdir monitoring`
+
 `mv docker-compose.yaml monitoring`
+
 `mkdir prometheus`
+
 `mv prometheus.yaml prometheus`
+
 `mv nodeexporter.yaml prometheus`
+
 `sudo docker-compose up -d`
 
 **Step 3 : Configure Prometheus and Grafana on the localhost**
