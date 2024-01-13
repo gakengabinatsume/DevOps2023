@@ -1,23 +1,25 @@
-# How to make a Jenkins pipeline for a Python script to Docker image ?
+# How to add Prometheus and Grafana to Jenkins
 
-**Step 1 : Add the necessary documents in Github.**
+**Step 1 : Add the Prometheus pluggin in Jenkins and configure it.**
 
-- Python script. 
-- Docker file
-- Jenkins file
+![Prometheus_config](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/ad2b35e7-eb6c-4c3f-8e8e-04f76863c9c3)
 
-**Step 2 : Create a Multibranch Pipeline in Jenkins**
-- Add your GitHub repository.
-![alt text](BranchSource.jpg)
-- Add your Jenkinsfile path from your repository.
-![alt text](Build.jpg)
-- Add your DockerHub repository.
-![alt text](Dockerconf.jpg)
+**Step 2 : Create the stack using Docker in the monitoring folder**
 
-**Step 3 : Scan and trigger the build**
+Files nedded:
+- docker-compose.yaml
+- prometheus.yaml
+- nodeexporter.yaml
 
-![alt text](Scan.jpg)
+`mkdir monitoring`
+`mv docker-compose.yaml monitoring`
+`mkdir prometheus`
+`mv prometheus.yaml prometheus`
+`mv nodeexporter.yaml prometheus`
+`sudo docker-compose up -d`
+
+**Step 3 : Configure Prometheus and Grafana on the localhost**
+
+
 
 **Step 4 : Pull the image from Dockerhub and run it**
-
-![alt text](Dockercontainer.png)
