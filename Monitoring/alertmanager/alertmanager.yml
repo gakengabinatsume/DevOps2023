@@ -1,16 +1,16 @@
 route:
-  receiver: 'Mail Alert'
+  receiver: 'Gmail Alert'
   # group_by: [ job ]
   repeat_interval: 30s
   group_wait: 15s
   group_interval: 15s
 
 receivers:
-  - name: 'Mail Alert'
+  - name: 'Gmail Alert'
     email_configs:
-    - to: "email id"
-      from: "email id"
+    - to: "gabimiron96@gmail.com"
+      from: "gabimiron96@gmail.com"
       smarthost: smtp.gmail.com:587
-      auth_username: "email id"
-      auth_identity: "email id"
-      auth_password: "passwd"
+      auth_username: "gabimiron96@gmail.com"
+      auth_identity: "gabimiron96@gmail.com"
+      auth_password: "rfaa iazh igqi fzgv"
