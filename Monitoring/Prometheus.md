@@ -40,4 +40,9 @@ Files nedded:
 
 ![log in](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/78a9a91b-6285-443d-a1e8-0c52d4c5a164)
 
+-Add data source from Prometheus in Grafana
+
+![Data source](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/6b673e73-273d-486a-8443-bb9721e5a140)
+
+
 **Step 4 : Pull the image from Dockerhub and run it**
