@@ -24,9 +24,20 @@ Files nedded:
 
 **Step 3 : Configure Prometheus and Grafana on the localhost**
 
--Modify the IP address on the prometheus.yml file for jenkins_job with the global dynamic one as seen below
+-Modify the IP address on the prometheus.yml file for jenkins_job with the global dynamic one 
+
 `sudo ip addr | inet`
+
 ![IP addr](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/31db5b46-2393-469e-906a-2266bb9d22cf)
 
+-Restart docker compose and make sure the Targets are up in Prometheus (localhost:9090/targets)
+
 `sudo docker-compose restart`
+
+![Targets](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/51a169c9-78ff-4145-9aa8-fae9dcf8068f)
+
+-Log into Grafana (localhost:3000) using admin as initial user and password
+
+![log in](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/78a9a91b-6285-443d-a1e8-0c52d4c5a164)
+
 **Step 4 : Pull the image from Dockerhub and run it**
