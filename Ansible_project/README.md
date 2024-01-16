@@ -7,56 +7,60 @@
 
 **Step 1 : Install ansible on the master node**
 
-`sudo apt-get update`
+```
+sudo apt-get update
 
-`sudo apt install software-properties-common`
+sudo apt install software-properties-common
 
-`sudo add-apt-repository --yes --update ppa:ansible/ansible`
+sudo add-apt-repository --yes --update ppa:ansible/ansible
 
-`sudo apt install ansible`
+sudo apt install ansible
+```
 
 **Step 2 : Check if it is done correctly**
-
-`ansible --version`
+```
+ansible --version
+```
 
 **Step 3 : Generate a ssh key and copy it in the worker nodes**
+```
+ssh-keygen
 
-`ssh-keygen`
+ssh-copy-id root@10.106.0.2
 
-`ssh-copy-id root@10.106.0.2`
+ssh-copy-id root@10.106.0.4
 
-`ssh-copy-id root@10.106.0.4`
-
-`ssh-copy-id root@10.106.0.3`
+ssh-copy-id root@10.106.0.3
+```
 
 **Step 4 : Create inventory file in ansible directory**
+```
+cd /etc/ansible/
 
-`cd /etc/ansible/`
-
-`nano inventory`
-
+nano inventory
+```
 [inventory](https://github.com/gakengabinatsume/DevOps2023/blob/main/Ansible_project/inventory)
 
 **Step 5 : Check the ssh connection to the nodes**
-
-` ansible -m ping all`
-
+```
+ansible -m ping all
+```
 ![ping](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/00f34204-252d-4bb2-bce2-d2f63ebbc070)
 
 **Step 6 : Create a playbook.yaml file and run it**
-
-`nano playbook.yaml`
-
+```
+nano playbook.yaml
+```
 [playbook](https://github.com/gakengabinatsume/DevOps2023/blob/main/Ansible_project/playbook.yaml/)
-
-`ansible-playbook playbook.yaml`
-
+```
+ansible-playbook playbook.yaml
+```
 ![playbook](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/7d430aa0-9816-4f45-81a0-2baa0636c27d)
 
 **Step 7 : Check the playbook results**
-
-`ssh root@10.106.0.2`
-
+```
+ssh root@10.106.0.2
+```
 ![status_node_1](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/553896cf-1600-4e52-9d11-5df72ced71eb)
 
 
