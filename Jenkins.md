@@ -4,27 +4,27 @@
 ![alt text](https://i.ytimg.com/vi/PKcGy9oPVXg/maxresdefault.jpg)
 
 **Step 1 : Install Java & Jenkins**
+```
+sudo apt-get update
 
-`sudo apt-get update`
+sudo apt install fontconfig openjdk-17-jre
 
-`sudo apt install fontconfig openjdk-17-jre`
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian/jenkins.io-2023.key
 
-`sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian/jenkins.io-2023.key`
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 
-`echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null`
+sudo apt-get update
 
-`sudo apt-get update`
-
-`sudo apt-get install jenkins`
-
+sudo apt-get install jenkins
+```
 **Step 2 : Start Jenkins**
+```
+sudo systemctl enable jenkins
 
-`sudo systemctl enable jenkins`
+sudo systemctl start jenkins
 
-`sudo systemctl start jenkins`
-
-`sudo systemctl status jenkins`
-
+sudo systemctl status jenkins
+```
 **Step 3 : Unlocking Jenkins**
 
 Browse to http://localhost:8080 and from the Jenkins console log output, copy the automatically-generated alphanumeric password (between the 2 sets of asterisks)
