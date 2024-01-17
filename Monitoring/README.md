@@ -6,7 +6,7 @@
 
 **Step 2 : Create the stack using Docker in the monitoring folder**
 
-Files nedded:
+Files needed:
 - docker-compose.yaml
 - prometheus.yaml
 
