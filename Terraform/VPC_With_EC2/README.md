@@ -23,7 +23,8 @@ Files needed:
 - outputs.tf
 - terraform.tfvars
 - variables.tf
-- 
+- YourZoneKeyPair.perm
+  
 **Step 4 : Use the below command to create the infrastructure**
 ```
 terraform init && terraform validate && terraform plan && terraform apply --auto-approve
