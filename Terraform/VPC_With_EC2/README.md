@@ -12,8 +12,6 @@
 
 [Instructions](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 
-![Security_credentials](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/e6751491-010a-43bf-b9b8-9064ce6158af)
-
 ![Access_key](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/35815b72-4fa2-4bca-9c0b-8e6a20a56583)
 
 **Step 3 : Add the files on your system**
