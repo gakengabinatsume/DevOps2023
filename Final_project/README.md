@@ -1,4 +1,7 @@
 # Final project DevOps 2023
+
+![Capture](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/cb5d92ee-dfa0-4189-ae5d-020322012810)
+
 **Step 1 : Creating an EC2 using Terraform while Ansible installs Jenkins and Docker** 
 
 - Create Terraform and AWS structure on your windows.
