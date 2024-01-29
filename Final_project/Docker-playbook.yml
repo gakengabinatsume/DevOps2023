@@ -1,8 +1,8 @@
 ---
 - name: Install Docker on Ubuntu
   hosts: localhost
-  become: yes
-  become_user: ubuntu
+  become: true
+  become_user: root
   vars:
     arch_mapping:  # Map ansible architecture {{ ansible_architecture }} names to Docker's architecture names
       x86_64: amd64
