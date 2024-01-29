@@ -28,3 +28,7 @@ cat user-data.log
 
 - Follow the instructions :
 [Instructions](https://github.com/gakengabinatsume/DevOps2023/tree/main/Jenkins_project)
+
+**Step 4 : Monitor it with Prometheus and Grafana**
+- Follow the instructions :
+[Instructions](https://github.com/gakengabinatsume/DevOps2023/tree/main/Monitoring)
