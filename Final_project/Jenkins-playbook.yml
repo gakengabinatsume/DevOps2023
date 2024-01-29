@@ -6,7 +6,7 @@
 
   tasks:
   - name: Update all packages to their latest version
-    apt:
+    dpkg:
       name: "*"
       state: latest
 
@@ -22,7 +22,7 @@
       filename: jenkins.list  
 
   - name: Update all packages to their latest version
-    apt:
+    dpkg:
       name: "*"
       state: latest
 
