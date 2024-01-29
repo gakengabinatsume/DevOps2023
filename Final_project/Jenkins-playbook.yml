@@ -2,11 +2,11 @@
 - name: Install jenkins
   hosts: localhost
   become: true
-  become_user: ubuntu
+  become_user: root
 
   tasks:
   - name: Update all packages to their latest version
-    dpkg:
+    apt:
       name: "*"
       state: latest
 
@@ -22,7 +22,7 @@
       filename: jenkins.list  
 
   - name: Update all packages to their latest version
-    dpkg:
+    apt:
       name: "*"
       state: latest
 
