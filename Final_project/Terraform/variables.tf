@@ -7,7 +7,7 @@ variable "instance_type" {
 }
 variable "key_name" {
   type = string
-  default = "key_terraform"
+  default = "YourKey"
 }
 
 variable "availability_zones" {
