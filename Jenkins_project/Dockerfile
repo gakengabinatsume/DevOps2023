@@ -1,16 +1,4 @@
-FROM ubuntu:latest
-
-# Install necessary dependencies
-RUN apt-get update && apt-get install -y mupdf
-
-# Copy the PDF file into the container
-COPY CV.pdf /app
-
-# Set the working directory
+FROM python:3.7
 WORKDIR /app
-
-# Expose the necessary port
-EXPOSE 5000
-
-# Start the PDF viewer
-CMD ["mupdf-gl", "CV.pdf"]
+COPY /Jenkins_project/Welcome.py /app
+CMD ["python3","/app/Welcome.py"]
