@@ -31,11 +31,13 @@ Browse to http://localhost:8080 and from the Jenkins console log output, copy th
 
 ![alt text](https://www.jenkins.io/doc/book/resources/tutorials/setup-jenkins-01-unlock-jenkins-page.jpg)
 
-**Step 4 : Customizing Jenkins with plugins**
+**Step 4 : Create first admin user**
+
+![alt text](https://res.cloudinary.com/practicaldev/image/fetch/s--mIX091HC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lx5vfv5a9vo8hhb68cm9.png)
+
+**Step 5 : Customizing Jenkins with plugins**
 
 Manage Jenkins -> Manage Plugins
 
 ![alt text](https://www.jenkins.io/doc/book/resources/managing/plugin-manager-update.png)
 
-**Step 5 : Create first admin user**
-![alt text](https://res.cloudinary.com/practicaldev/image/fetch/s--mIX091HC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lx5vfv5a9vo8hhb68cm9.png)
