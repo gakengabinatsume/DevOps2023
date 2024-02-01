@@ -1,15 +1,16 @@
-import PyPDF2
+from pypdf import PdfReader
 
-# Open the PDF file
-with open('CV.pdf', 'rb') as file:
-    # Create a PDF reader object
-    pdf_reader = PyPDF2.PdfFileReader(CV.pdf)
+reader = PdfReader("CV.pdf")
 
-    # Get the total number of pages in the PDF
-    num_pages = pdf_reader.numPages
+# Print the number of pages in the PDF
+print(f"There are {len(reader.pages)} Pages")
 
-    # Read each page and print its content
-    for page_num in range(num_pages):
-        page = pdf_reader.getPage(page_num)
-        content = page.extractText()
-        print(content)
+# Get the first page (index 0) 
+page = reader.pages[0]
+# Use extract_text() to get the text of the page
+print(page.extract_text())
+
+# Go through every page and get the text
+for i in range(len(reader.pages)):
+  page = reader.pages[i]
+  print(page.extract_text())
