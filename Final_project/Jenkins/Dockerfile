@@ -1,16 +1,15 @@
-FROM ubuntu:latest
+# Use an official Python runtime as the base image
+FROM python:3.9-slim
 
-# Install necessary dependencies
-RUN apt-get update && apt-get install -y mupdf
-
-# Copy the PDF file into the container
-COPY CV.pdf /app
-
-# Set the working directory
+# Set the working directory in the container
 WORKDIR /app
 
-# Expose the necessary port
-EXPOSE 5000
+# Copy the Python script and PDF file into the container
+COPY PrintPDF.py .
+COPY CV.pdf .
 
-# Start the PDF viewer
-CMD ["mupdf-gl", "CV.pdf"]
+# Install the required dependencies
+RUN pip install PyPDF2
+
+# Run the Python script when the container starts
+CMD ["python", "/app/PrintPDF.py"]
