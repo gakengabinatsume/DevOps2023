@@ -5,8 +5,8 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the Python script and PDF file into the container
-COPY PrintPDF.py /app
-COPY CV.pdf /app
+COPY /Final_project/Jenkins/PrintPDF.py /app
+COPY /Final_project/Jenkins/CV.pdf /app
 
 # Install the required dependencies
 RUN pip install PyPDF2
