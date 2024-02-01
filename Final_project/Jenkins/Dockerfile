@@ -5,8 +5,8 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the Python script and PDF file into the container
-COPY PrintPDF.py .
-COPY CV.pdf .
+COPY PrintPDF.py /app
+COPY CV.pdf /app
 
 # Install the required dependencies
 RUN pip install PyPDF2
