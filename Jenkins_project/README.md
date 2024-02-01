@@ -13,7 +13,7 @@
 ![Build](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/09e5114a-27a9-41b5-acfa-125fcdab610c)
 - Add your DockerHub repository.
 ![Docker conf](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/df7d50e4-da6f-42ef-8266-7ccbba39df46)
-- Make sure Jenkins is in the docker group, if not use the comand :
+- Make sure jenkins user is in the docker group, if not use the comand below and restart Jenkins :
 ```
 sudo usermod -a -G docker jenkins
 ```
