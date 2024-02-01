@@ -5,7 +5,7 @@ pipeline {
    environment {
        // Please update your own registry here
        REGISTRY = 'registry.hub.docker.com'
-       REGISTRY_IMAGE = "$REGISTRY/gabimiron96/jenkins"
+       REGISTRY_IMAGE = "$REGISTRY/gabimiron96/final-project"
        DOCKERFILE_PATH = 'Final_project/Jenkins/Dockerfile'
        // docker = '/usr/local/bin/docker'
 
