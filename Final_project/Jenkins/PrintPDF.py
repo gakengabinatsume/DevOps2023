@@ -1,3 +1,3 @@
-import webbrowser
+import os
 path = '/app/CV.pdf'
-webbrowser.open_new(path)
+os.system(path)
