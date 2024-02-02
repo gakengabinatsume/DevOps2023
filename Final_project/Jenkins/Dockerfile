@@ -10,6 +10,6 @@ COPY /Final_project/Jenkins/CV.pdf /app
 
 # Install the required dependencies
 #RUN pip install windows
-USER root
+USER docker
 # Run the Python script when the container starts
 CMD ["python", "/app/PrintPDF.py"]
