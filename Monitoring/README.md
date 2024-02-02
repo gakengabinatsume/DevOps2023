@@ -19,6 +19,9 @@ mv prometheus.yaml prometheus
 ```
 sudo docker-compose up -d
 ```
+```
+sudo docker-compose ps
+```
 ![docker compose up](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/ddb127e7-2b8e-4f6a-8283-070c004cfc21)
 
 **Step 3 : Configure Prometheus on the localhost**
