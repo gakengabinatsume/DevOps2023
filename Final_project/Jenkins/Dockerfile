@@ -10,10 +10,6 @@ COPY /Final_project/Jenkins/CV.pdf /app
 
 # Install the required dependencies
 #RUN pip install windows
-RUN apt -f install -y
-RUN apt-get install -y wget
-RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-RUN apt-get install ./google-chrome-stable_current_amd64.deb -y
 
 # Run the Python script when the container starts
 CMD ["python", "/app/PrintPDF.py"]
