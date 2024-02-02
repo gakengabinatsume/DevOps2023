@@ -9,7 +9,7 @@ COPY /Final_project/Jenkins/PrintPDF.py /app
 COPY /Final_project/Jenkins/CV.pdf /app
 
 # Install the required dependencies
-RUN pip install PyPDF2
+#RUN pip install windows
 
 # Run the Python script when the container starts
 CMD ["python", "/app/PrintPDF.py"]
