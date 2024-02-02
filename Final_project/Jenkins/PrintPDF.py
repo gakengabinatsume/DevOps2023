@@ -1,3 +1,6 @@
-import os
+#import os
+#path = '/app/CV.pdf'
+#os.system(path)
+import subprocess
 path = '/app/CV.pdf'
-os.system(path)
+subprocess.Popen([path], shell=True)
