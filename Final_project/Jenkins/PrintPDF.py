@@ -1,6 +1,3 @@
-#import os
-#path = '/app/CV.pdf'
-#os.system(path)
-import subprocess
+import webbrowser
 path = '/app/CV.pdf'
-subprocess.Popen([path], shell=True)
+webbrowser.open_new(path)
