@@ -2,7 +2,7 @@
 #FROM python:3.9-slim
 FROM ubuntu:latest
 RUN apt update
-RUN apt install python -y
+RUN apt install python3 -y
 # Set the working directory in the container
 WORKDIR /app
 
