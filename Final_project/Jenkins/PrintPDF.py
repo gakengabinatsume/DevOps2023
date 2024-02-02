@@ -1,3 +1,3 @@
 import os
-path = 'CV.pdf'
+path = '/app/CV.pdf'
 os.system(path)
