@@ -1,19 +1,19 @@
-# Use an official Python runtime as the base image
-#FROM python:3.9-slim
-FROM ubuntu
-RUN apt update
-RUN apt install python3-pip -y
-RUN pip3 install Flask
-# Set the working directory in the container
+# start by pulling the python image
+FROM python:3.8-alpine
+
+# copy the requirements file into the image
+COPY ./requirements.txt /app/requirements.txt
+
+# switch working directory
 WORKDIR /app
 
-# Copy the Python script and PDF file into the container
-COPY /Final_project/Jenkins/PrintPDF.py /app
-COPY /Final_project/Jenkins/CV.pdf /app
+# install the dependencies and packages in the requirements file
+RUN pip install -r requirements.txt
 
-# Install the required dependencies
-#RUN pip install windows
-USER root
-# Run the Python script when the container starts
-#CMD ["python", "/app/PrintPDF.py"]
-CMD ["python3","-m","flask","run","--host=0.0.0.0"]
+# copy every content from the local file to the image
+COPY . /app
+
+# configure the container to run in an executed manner
+ENTRYPOINT [ "python" ]
+
+CMD ["PrintPDF.py" ]
