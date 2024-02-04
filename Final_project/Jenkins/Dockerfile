@@ -16,4 +16,4 @@ RUN pip install Flask
 # configure the container to run in an executed manner
 ENTRYPOINT [ "python" ]
 
-CMD ["PrintPDF.py" ]
+CMD ["/app/PrintPDF.py" ]
