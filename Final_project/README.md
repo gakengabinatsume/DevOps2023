@@ -19,7 +19,12 @@ cd /var/log/
           
 cat user-data.log 
 ```
-**Step 2 : Configure Jenkins**
+**Step 2 : Log into Docker on the EC2 and configure Jenkins**
+
+```
+docker login
+```
+
 - Take the EC2 public IP from the output variables after Terraform created the infrastructure and connect on port 8080
 (ec2-public-ip:8080) and follow the instructions from step 3.
 [Instructions](https://github.com/gakengabinatsume/DevOps2023/blob/main/Jenkins.md)
@@ -28,7 +33,19 @@ cat user-data.log
 
 - Follow the instructions :
 [Instructions](https://github.com/gakengabinatsume/DevOps2023/tree/main/Jenkins_project)
+- Make sure there are no # in your index.html file
 
 **Step 4 : Monitor it with Prometheus and Grafana**
 - Follow the instructions :
 [Instructions](https://github.com/gakengabinatsume/DevOps2023/tree/main/Monitoring)
+
+**Step 5 : Create the docker container and open localhost:5000**
+```
+docker pull gabimiron96/final-project:tagname
+```
+```
+docker run -p 5000:5000 -d imageid
+```
+```
+docker stop containerid
+```
