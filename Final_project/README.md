@@ -36,6 +36,9 @@ docker login
 - Make sure there are no # in your index.html file
 
 **Step 4 : Monitor it with Prometheus and Grafana**
+ ```
+ cd /Ansible/DevOps2023/Monitoring/
+```
 - Follow the instructions :
 [Instructions](https://github.com/gakengabinatsume/DevOps2023/tree/main/Monitoring)
 
