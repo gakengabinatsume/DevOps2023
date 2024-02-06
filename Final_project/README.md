@@ -23,6 +23,9 @@ cat user-data.log
 
 ```
 docker login
+sudo usermod -a -G docker jenkins #add jenkins user to docker group
+sudo systemctl restart docker
+sudo apt  install docker-compose
 ```
 
 - Take the EC2 public IP from the output variables after Terraform created the infrastructure and connect on port 8080
