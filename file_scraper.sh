@@ -3,7 +3,7 @@
 #Input in the command line the file path or modify below
 
 #file="C:\Users\Power User\Desktop\file.txt"
-file=$1
+file=$12
 
 #Input in the command line the search word (case-insensitive)
 
