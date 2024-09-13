@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  stages {
+    stage('verify version') {
+      steps {
+        sh 'php --version'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh 'php CalculatorTest.php'
+      }
+    }
+  }
+}
