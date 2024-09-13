@@ -1,4 +1,4 @@
-**Step 1 : Create an EC2 and install Git & Ansible with user_data to install Jenkins, Docker, PHP and Composer
+**Step 1 : Create an EC2 and install Git & Ansible with user_data to install Jenkins, PHP and Composer**
 
 - Create Ansible structure in GitHub :
 
@@ -16,20 +16,20 @@ cat user-data.log
 ```
 **Step 2 : Configure Jenkins**
 
-- Take the EC2 public IP from **** and connect on port 8080
+- Take the EC2 public IP and connect on port 8080
 (ec2-public-ip:8080) and follow the bellow instructions:
 
-**Step A : Unlocking Jenkins**
+**A : Unlocking Jenkins**
 
 Browse to http://localhost:8080 and from the Jenkins console log output, copy the automatically-generated alphanumeric password (between the 2 sets of asterisks)
 
 ![alt text](https://www.jenkins.io/doc/book/resources/tutorials/setup-jenkins-01-unlock-jenkins-page.jpg)
 
-**Step B : Create first admin user**
+**B : Create first admin user**
 
 ![alt text](https://res.cloudinary.com/practicaldev/image/fetch/s--mIX091HC--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/lx5vfv5a9vo8hhb68cm9.png)
 
-**Step C : Manage plugins to send e-mail notification**
+**C : Manage plugins to send e-mail notification**
 
 -System-wide configuration
 Before using this plugin from a project, you must first configure some system-wide settings. Go to the Jenkins system-wide configuration page (Manage Jenkins, Configure System).
@@ -57,5 +57,6 @@ Same as Default Subject, but for the email body instead of the subject.
 ![Branch Source](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/677b5e18-2443-4a57-9c53-f48ffcada8c8)
 - Add your Jenkinsfile path from your repository.
 ![Build](https://github.com/gakengabinatsume/DevOps2023/assets/141765846/09e5114a-27a9-41b5-acfa-125fcdab610c)
--Scan and trigger the build
+
+- Scan and trigger the build
 
