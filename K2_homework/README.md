@@ -8,11 +8,26 @@
 
    3. Composer-playbook.yml
 
-- Check in AWS instance connect that everything went well
+- Check in AWS instance connect that everything went well and make the necessary commands below
 ```
 cd /var/log/
           
-cat user-data.log 
+cat user-data.log
+cd ..
+sudo chmod -R 777 .
+cd jenkinstests
+git config --global --add safe.directory '*'
+pwd
+git checkout -f  test1
+cd ./playbooks/ #change to playbook folder
+ansible-playbook Jenkins-playbook.yml
+ansible-playbook PHP-playbook.yml
+ansible-playbook Composer-playbook.yml
+cd . #change to compose files
+composer install
+sudo apt install php-xml
+sudo apt install php-mbstring
+composer install
 ```
 **Step 2 : Configure Jenkins**
 
