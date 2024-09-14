@@ -7,10 +7,4 @@ sudo apt install ansible -y
 sudo apt install git -y 
 mkdir Ansible && cd Ansible
 pwd
-git clone https://github.com/mionescu75/jenkinstests.git
-cd ./jenkinstests/tree/test1/playbooks/ #change to playbook folder
-ansible-playbook Jenkins-playbook.yml
-ansible-playbook PHP-playbook.yml
-ansible-playbook Composer-playbook.yml
-cd ./jenkinstests/tree/test1/ #change to compose files
-composer install
+git clone https://{GithubTOKEN}:x-oauth-basic@github.com/mionescu75/jenkinstests.git
