@@ -13,7 +13,7 @@
 cd /var/log/
           
 cat user-data.log
-cd ..
+cd /Ansible
 sudo chmod -R 777 .
 cd jenkinstests
 git config --global --add safe.directory '*'
@@ -23,11 +23,11 @@ cd ./playbooks/ #change to playbook folder
 ansible-playbook Jenkins-playbook.yml
 ansible-playbook PHP-playbook.yml
 ansible-playbook Composer-playbook.yml
-cd . #change to compose files
-composer install
+cd /Ansible
 sudo apt install php-xml
 sudo apt install php-mbstring
-composer install
+sudo usermod -aG sudo jenkins
+sudo apt update && sudo apt install unzip php-zip
 ```
 **Step 2 : Configure Jenkins**
 
@@ -48,22 +48,7 @@ Browse to http://localhost:8080 and from the Jenkins console log output, copy th
 
 -System-wide configuration
 Before using this plugin from a project, you must first configure some system-wide settings. Go to the Jenkins system-wide configuration page (Manage Jenkins, Configure System).
-
-The configuration for this plugin can be found in the section entitled Extended E-mail Notification. This configuration should match the settings for your SMTP mail server. This section mirrors that of the Mailer plugin in the E-mail Notification section; however, there are a few additions. The fields labeled Default Subject and Default Content allow you to configure the subject and content on a system-wide level. The field labeled Default Recipients can be used to set a default list of email addresses for all projects using this plugin (and can be overridden at the project level); this can be used to greatly simplify the configuration you need to do for all projects.
-
--Project configuration
-For a project to use this plugin, you need to enable it in the project configuration page. In the Post-build Actions section, click on Add post-build action and then select Editable Email Notification.
-
-There are three main fields that you can edit when this plugin is enabled:
-
-Project Recipient List
-This is a comma (or whitespace) separated list of email recipients. Allows you to specify a single recipient list for each email that is sent.
-
-Default Subject
-This allows you to configure a token (more about tokens later) that can be used to easily configure all email subjects for the project.
-
-Default Content
-Same as Default Subject, but for the email body instead of the subject.
+The configuration for this plugin can be found in the section entitled Extended E-mail Notification. This configuration should match the settings for your SMTP mail server. This section mirrors that of the Mailer plugin in the E-mail Notification section.
 
 **Step 3 : Create your Jenkins job**
 
