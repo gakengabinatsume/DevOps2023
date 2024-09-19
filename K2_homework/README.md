@@ -47,8 +47,19 @@ Browse to http://localhost:8080 and from the Jenkins console log output, copy th
 **C : Manage plugins to send e-mail notification**
 
 -System-wide configuration
-Before using this plugin from a project, you must first configure some system-wide settings. Go to the Jenkins system-wide configuration page (Manage Jenkins, Configure System).
-The configuration for this plugin can be found in the section entitled Extended E-mail Notification. This configuration should match the settings for your SMTP mail server. This section mirrors that of the Mailer plugin in the E-mail Notification section.
+Before using this plugin from a project, you must first configure some system-wide settings. 
+Go to the Jenkins system-wide configuration page (Manage Jenkins, Configure System).
+The configuration for this plugin can be found in the section entitled Extended E-mail Notification. 
+This configuration should match the settings for your SMTP mail server. 
+This section mirrors that of the Mailer plugin in the E-mail Notification section.
+
+![1](https://github.com/user-attachments/assets/31117caa-e839-41ae-b4c0-8373c17a1ac8)
+![2](https://github.com/user-attachments/assets/e8e1e45f-d612-4112-8ae1-da92fdf5723a)
+![3](https://github.com/user-attachments/assets/8c8fd8c4-6217-4142-8be9-a89b7e32b7be)
+
+You also need to use App passwords from your google account to put as a password.
+
+![4](https://github.com/user-attachments/assets/1460231e-9521-4638-9818-7bf2dc1dddf4)
 
 **Step 3 : Create your Jenkins job**
 
