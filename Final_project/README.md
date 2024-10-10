@@ -5,14 +5,19 @@
 **Step 1 : Creating an EC2 using Terraform while Ansible installs Jenkins and Docker** 
 
 - Create Terraform and AWS structure on your windows.
-[Instructions](https://github.com/gakengabinatsume/DevOps2023/tree/main/Terraform/VPC_With_EC2)
+[Instructions](https://github.com/gakengabinatsume/Terraform/tree/main/VPC_With_EC2)
 
 - Create Ansible structure in GitHub :
 
    1. Jenkins-playbook.yml
 
    2. Docker-playbook.yml
+   
+- Create Monitoring structure in GitHub :
+   1. docker-compose.yaml
 
+   2. prometheus.yaml
+   
 - Check in AWS instance connect that everything went well
 ```
 cd /var/log/
@@ -30,12 +35,12 @@ sudo apt  install docker-compose
 
 - Take the EC2 public IP from the output variables after Terraform created the infrastructure and connect on port 8080
 (ec2-public-ip:8080) and follow the instructions from step 3.
-[Instructions](https://github.com/gakengabinatsume/DevOps2023/blob/main/Jenkins.md)
+[Instructions](https://github.com/gakengabinatsume/Jenkins_project/blob/main/Jenkins.md)
 
 **Step 3 : Create your Jenkins job**
 
 - Follow the instructions :
-[Instructions](https://github.com/gakengabinatsume/DevOps2023/tree/main/Jenkins_project)
+[Instructions](https://github.com/gakengabinatsume/Jenkins_project/tree/main)
 - Make sure there are no # in your index.html file
 
 **Step 4 : Monitor it with Prometheus and Grafana**
@@ -43,7 +48,7 @@ sudo apt  install docker-compose
  cd /Ansible/DevOps2023/Monitoring/
 ```
 - Follow the instructions :
-[Instructions](https://github.com/gakengabinatsume/DevOps2023/tree/main/Monitoring)
+[Instructions](https://github.com/gakengabinatsume/Monitoring)
 
 **Step 5 : Create the docker container and open localhost:5000**
 ```
